@@ -1,0 +1,79 @@
+/* Fonts */
+:root { --font-monospace: "Fira Mono", monospace; }
+
+body {
+    font-family: var(--font-monospace);
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0 0;
+    font-weight: 600;
+}
+
+h1:before { content: "# ";}
+h2:before { content: "## ";}
+h3:before { content: "### ";}
+h4:before { content: "#### ";}
+h5:before { content: "##### ";}
+h6:before { content: "###### ";}
+
+h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { color: var(--bright-bg) }
+
+h1:first-child { margin-top: 0; }
+
+/* Paragraphs */
+p { margin: 0 0 1.5rem 0; }
+
+/* Links */
+a:link, a:visited { color: var(--fg) }
+
+a:hover, a:active { color: var(--bright-fg) }
+
+/* Lists */
+ul {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1.25rem;
+}
+
+ol {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1.75rem;
+}
+
+ul li::marker {
+    content: '*\00A0';
+    color: var(--bright-bg);
+}
+
+ol li::marker { color: var(--bright-bg) }
+
+dt {
+    margin: 0;
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 0 0 1.5rem;
+    font-style: italic;
+}
+
+dd + dt { margin-top: 1.5rem; }
+
+dl { margin: 0 0 1.5rem 0; }
+
+/* Blockquotes */
+blockquote {
+    position: relative;
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+blockquote::before {
+    position: absolute;
+    left: -1.5rem;
+    content: ">";
+    color: var(--bright-bg);
+}
