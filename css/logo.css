@@ -1,0 +1,31 @@
+.page_logo {
+    padding: 0;
+    margin: 0;
+    font-weight: inherit;
+    color: var(--bg);
+}
+
+.page_logo::before { content: none; }
+
+.page_logo-inner {
+    display: block;
+    background: var(--green);
+    padding: 0.25rem;
+}
+
+a.page_logo-inner:link, a.page_logo-inner:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a.page_logo-inner:hover, a.page_logo-inner:active { background: var(--bright-green); }
+
+.page_logo-inner::before {
+    content: "[";
+    color: var(--bg);
+}
+
+.page_logo-inner::after {
+    content: "] $";
+    color: var(--bg);
+}
