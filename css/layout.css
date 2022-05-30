@@ -25,27 +25,27 @@
 }
 
 /* Header */
-.page_header {
+.pageHeader {
     grid-area: header;
     display: flex;
 }
 
-.page_logo { flex-shrink: 0; }
+.pageLogo { flex-shrink: 0; }
 
-.page_nav {flex-grow: 1; }
+.pageNav {flex-grow: 1; }
 
 /* Body and Aside */
-.page_body {
+.pageBody {
     grid-area: body;
     background-color: var(--bg);
     box-shadow: 0 0 0 1rem var(--bg);
     overflow-wrap: break-word;
 }
 
-.page_aside {
+.pageAside {
     grid-area: aside;
     color: var(--bright-bg);
 }
 
 /* Footer */
-.page_footer { grid-area: footer; }
+.pageFooter { grid-area: footer; }

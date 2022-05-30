@@ -1,12 +1,15 @@
-.about_title, .about_pronouns {
+.aboutTitle, .aboutPronouns {
     display: inline;
     vertical-align: top;
 }
 
-.about_title::before { content: none; }
+.aboutPronouns { font-style: italic; }
+.aboutPronouns::before { content: none; }
 
-.aside_social-links { padding: 0; }
+.aboutTitle::before { content: none; }
 
-.aside_social-links li { display: inline-block; }
+.asideSocialLinks { padding: 0; }
 
-.aside_social-links li::marker { content: none; }
+.asideSocialLinks li { display: inline-block; }
+
+.asideSocialLinks li::marker { content: none; }
